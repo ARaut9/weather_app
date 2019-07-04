@@ -1,6 +1,7 @@
 import React from 'react';
 import MainInfo from './MainInfo';
 import OtherInfo from './OtherInfo';
+import errorIcon from '../icons/error.png';
 
 class WeatherInfo extends React.Component {
   constructor(props) {
@@ -25,7 +26,7 @@ class WeatherInfo extends React.Component {
 
   fetchWeatherData(location) {
     let scope = this;
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&APPID=ace869be131c169c64e7bc427753e37a`, 
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&APPID=ace869be131c169c64e7bc427753e37a`, 
       { mode: 'cors'} )
     .then(
       function(response) {
@@ -91,7 +92,7 @@ class WeatherInfo extends React.Component {
 
           <div id="error">
             <p id="error-msg">Location Not Found</p>
-            <div><img src="icons/error.png" alt=""/></div>
+            <div><img src={errorIcon} alt=""/></div>
           </div>
         </div>
       );
