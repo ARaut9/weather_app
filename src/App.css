@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+    padding-bottom: 50px;
+    background-color: #fff;
+}
+
+input {
+    width: 75%;
+    padding: 10px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+input[type="submit"] {
+    width: 25%;
+    border: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+.container {
+    height: 500px;
+    width: 400px;
+    background-color: #000;
+    color: #fff;
+    margin: 40px auto;
+    position: relative;
+}
+
+.container h1 {
+    font-size: 4.5rem;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+.container h1 sup {
+    font-size: 3rem;
+}
+
+.container h2 {
+    font-size: 2.5rem;
+    padding-left: 30px;
+}
+
+.container h3 {
+    font-size: 1rem;
+    padding-left: 30px;
+}
+
+.other-info {
+    display: flex;
+    justify-content: space-around;
+    margin: 5px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 5%;
+}
+
+.other-info div {
+    flex: 1;
+    background-color: #fff;
+    color: #000;
+    margin: 0 5px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.other-info h2 {
+    font-size: 1rem;
+    padding: 10px 0;
+    font-weight: normal;
+}
+
+.other-info p {
+    font-size: 1.5rem;
+    padding: 10px 0;
+}
+
+.other-info p span {
+    font-size: 1.2rem;
+}
+
+.other-info div div {
+    padding: 10px 0;
+}
+
+#error-msg {
+    color: #f00;
+    font-size: 2.5rem;
+    padding: 50px 20px;
+}
+
+#error div {
+    width: 200px;
+    margin: auto;
+    text-align: center;
+}
+
+#error img {
+    height: 120px;
+}
